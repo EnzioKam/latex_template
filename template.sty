@@ -1,0 +1,28 @@
+% template.sty
+
+\def\filedate{2017/1/25}
+\NeedsTeXFormat{LaTeX2e}[2017/04/15]
+\ProvidesPackage{template}
+  [\filedate{} LaTeX style for documents]
+
+\usepackage{info}
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{color}
+\usepackage{comment}
+\usepackage{graphicx}
+\usepackage{environ}
+
+\pagestyle{fancy}
+\setlength{\headheight}{65pt}
+
+\newenvironment{problem}[2][Question]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{sol}{\emph{Solution:}}
+
+%% End of file 'template.sty'

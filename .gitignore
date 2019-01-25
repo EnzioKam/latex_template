@@ -1,0 +1,13 @@
+# Files from LaTeX output
+*.png
+*.pdf
+*.log
+*.bbl
+*.toc
+*.blg
+*.dvi
+*.aux
+*.out
+
+# Files containing personal and document information
+info.sty
